@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grill House</title>
+  <link href="./css/index.min.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <svg display="none">
+  <symbol id="arrow-left" viewBox="0 0 240.823 240.823">
+    <path d="M57.633,129.007L165.93,237.268c4.752,4.74,12.451,4.74,17.215,0c4.752-4.74,4.752-12.439,0-17.179
+		l-99.707-99.671l99.695-99.671c4.752-4.74,4.752-12.439,0-17.191c-4.752-4.74-12.463-4.74-17.215,0L57.621,111.816
+		C52.942,116.507,52.942,124.327,57.633,129.007z"/>
+  </symbol>
+  <symbol id="arrow-right" viewBox="0 0 451.846 451.847">
+    <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+		L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+		c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/>
+  </symbol>
+  <symbol id="facebook" viewBox="0 0 24 24">
+    <path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/>
+  </symbol>
+  <symbol id="instagram" viewBox="0 0 512.00096 512.00096">
+    <path d="m373.40625 0h-234.8125c-76.421875 0-138.59375 62.171875-138.59375 138.59375v234.816406c0 76.417969 62.171875 138.589844 138.59375 138.589844h234.816406c76.417969 0 138.589844-62.171875 138.589844-138.589844v-234.816406c0-76.421875-62.171875-138.59375-138.59375-138.59375zm108.578125 373.410156c0 59.867188-48.707031 108.574219-108.578125 108.574219h-234.8125c-59.871094 0-108.578125-48.707031-108.578125-108.574219v-234.816406c0-59.871094 48.707031-108.578125 108.578125-108.578125h234.816406c59.867188 0 108.574219 48.707031 108.574219 108.578125zm0 0"/><path d="m256 116.003906c-77.195312 0-139.996094 62.800782-139.996094 139.996094s62.800782 139.996094 139.996094 139.996094 139.996094-62.800782 139.996094-139.996094-62.800782-139.996094-139.996094-139.996094zm0 249.976563c-60.640625 0-109.980469-49.335938-109.980469-109.980469 0-60.640625 49.339844-109.980469 109.980469-109.980469 60.644531 0 109.980469 49.339844 109.980469 109.980469 0 60.644531-49.335938 109.980469-109.980469 109.980469zm0 0"/><path d="m399.34375 66.285156c-22.8125 0-41.367188 18.558594-41.367188 41.367188 0 22.8125 18.554688 41.371094 41.367188 41.371094s41.371094-18.558594 41.371094-41.371094-18.558594-41.367188-41.371094-41.367188zm0 52.71875c-6.257812 0-11.351562-5.09375-11.351562-11.351562 0-6.261719 5.09375-11.351563 11.351562-11.351563 6.261719 0 11.355469 5.089844 11.355469 11.351563 0 6.257812-5.09375 11.351562-11.355469 11.351562zm0 0"/>
+  </symbol>
+  <symbol id="twitter" viewBox="0 0 512 512">
+    <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+			c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+			c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+			c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+			c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+			c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+			C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+			C480.224,136.96,497.728,118.496,512,97.248z"/>
+  </symbol>
+  <symbol id="youtube" viewBox="-21 -117 682.66672 682">
+    <path d="m626.8125 64.035156c-7.375-27.417968-28.992188-49.03125-56.40625-56.414062-50.082031-13.703125-250.414062-13.703125-250.414062-13.703125s-200.324219 0-250.40625 13.183593c-26.886719 7.375-49.03125 29.519532-56.40625 56.933594-13.179688 50.078125-13.179688 153.933594-13.179688 153.933594s0 104.378906 13.179688 153.933594c7.382812 27.414062 28.992187 49.027344 56.410156 56.410156 50.605468 13.707031 250.410156 13.707031 250.410156 13.707031s200.324219 0 250.40625-13.183593c27.417969-7.378907 49.03125-28.992188 56.414062-56.40625 13.175782-50.082032 13.175782-153.933594 13.175782-153.933594s.527344-104.382813-13.183594-154.460938zm-370.601562 249.878906v-191.890624l166.585937 95.945312zm0 0"/>
+  </symbol>
+</svg>
+  <main class="main">
+    <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a class="logo" href="#">
+        <img class="logo__img" src="./img/header/logo.png" alt="logo">
+      </a>
+      <button class="button-menu" data-button-menu>
+        <span class="button-menu__line"></span>
+      </button>
+      <nav class="menu" data-menu>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Home</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Menu</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Specials</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">About</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Method</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+    <section class="intro">
+  <div class="container">
+    <div class="intro__inner">
+      <div class="slider-wrapper">
+        <div class="intro__slider" data-intro-slider>
+          <div class="intro__item">
+            <div class="section-column">
+              <div class="section-column__title intro__title">opening party</div>
+              <div class="section-column__body intro__subtitle">
+                <p>06/20/2020 - 7 P.M</p>
+              </div>
+            </div>
+            <div class="intro__text">FOOD - MUSIC - FRIENDS - FUN</div>
+          </div>
+          <div class="intro__item">
+            <div class="section-column">
+              <div class="section-column__title intro__title">opening party</div>
+              <div class="section-column__body intro__subtitle">
+                <p>06/20/2020 - 7 P.M</p>
+              </div>
+            </div>
+            <div class="intro__text">FOOD - MUSIC - FRIENDS - FUN</div>
+          </div>
+          <div class="intro__item">
+            <div class="section-column">
+              <div class="section-column__title intro__title">opening party</div>
+              <div class="section-column__body intro__subtitle">
+                <p>06/20/2020 - 7 P.M</p>
+              </div>
+            </div>
+            <div class="intro__text">FOOD - MUSIC - FRIENDS - FUN</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="intro__food intro__food_first">
+    <img class="intro__img" src="./img/intro/food-1.png" alt="food">
+  </div>
+  <div class="intro__food intro__food_second">
+    <img class="intro__img" src="./img/intro/food-2.png" alt="food">
+  </div>
+</section>
+    <section class="food-menu">
+  <div class="container">
+    <div class="food-menu__inner">
+      <h2 class="food-menu__title">Menu</h2>
+      <div class="food-menu__row">
+        <div class="food-menu__column">
+          <div class="food-menu__picture">
+            <img class="food-menu__img" src="./img/menu/menu-1.png" alt="menu-food">
+          </div>
+          <div class="food-menu__content">
+            <div class="section-column">
+              <div class="section-column__title">chicken</div>
+              <div class="section-column__body">
+                <ul class="food-menu__list">
+                  <li class="food-menu__item">
+                    <span class="food-menu__text">Chicken with salad</span>
+                    <span class="food-menu__text">6,00</span>
+                  </li>
+                  <li class="food-menu__item">
+                    <span class="food-menu__text">The Gold Chicken</span>
+                    <span class="food-menu__text">11,00</span>
+                  </li>
+                  <li class="food-menu__item">
+                    <span class="food-menu__text">Checken whit sauce</span>
+                    <span class="food-menu__text">8,00</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="section-column">
+              <div class="section-column__title">slides</div>
+              <div class="section-column__body">
+                <ul class="food-menu__list">
+                  <li class="food-menu__item">
+                    <span class="food-menu__text">Potato fries</span>
+                    <span class="food-menu__text">6,00</span>
+                  </li>
+                  <li class="food-menu__item">
+                    <span class="food-menu__text">Mushrooms</span>
+                    <span class="food-menu__text">11,00</span>
+                  </li>
+                  <li class="food-menu__item">
+                    <span class="food-menu__text">Roasted Brocoli</span>
+                    <span class="food-menu__text">8,00</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="food-menu__column">
+          <div class="food-menu__picture">
+            <img class="food-menu__img" src="./img/menu/menu-2.png" alt="menu-food">
+          </div>
+          <div class="food-menu__content">
+            <div class="section-column">
+              <div class="section-column__title">beef</div>
+              <div class="section-column__body">
+                <ul class="food-menu__list">
+                  <li class="food-menu__item">
+                    <span class="food-menu__text">Prime Steak</span>
+                    <span class="food-menu__text">6,00</span>
+                  </li>
+                  <li class="food-menu__item">
+                    <span class="food-menu__text">Steak Beef</span>
+                    <span class="food-menu__text">11,00</span>
+                  </li>
+                  <li class="food-menu__item">
+                    <span class="food-menu__text">Entrecote</span>
+                    <span class="food-menu__text">8,00</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="section-column">
+              <div class="section-column__title">drinks</div>
+              <div class="section-column__body">
+                <ul class="food-menu__list">
+                  <li class="food-menu__item">
+                    <span class="food-menu__text">Soft Drink</span>
+                    <span class="food-menu__text">6,00</span>
+                  </li>
+                  <li class="food-menu__item">
+                    <span class="food-menu__text">Beer</span>
+                    <span class="food-menu__text">11,00</span>
+                  </li>
+                  <li class="food-menu__item">
+                    <span class="food-menu__text">Wine glass</span>
+                    <span class="food-menu__text">8,00</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="food-menu__column">
+          <div class="food-menu__picture">
+            <img class="food-menu__img" src="./img/menu/menu-3.png" alt="menu-food">
+          </div>
+          <div class="food-menu__content">
+            <div class="section-column">
+              <div class="section-column__title">pork</div>
+              <div class="section-column__body">
+                <ul class="food-menu__list">
+                  <li class="food-menu__item">
+                    <span class="food-menu__text">Pork Cheeks</span>
+                    <span class="food-menu__text">6,00</span>
+                  </li>
+                  <li class="food-menu__item">
+                    <span class="food-menu__text">Iberian Special Cut</span>
+                    <span class="food-menu__text">11,00</span>
+                  </li>
+                  <li class="food-menu__item">
+                    <span class="food-menu__text">Pork Chop</span>
+                    <span class="food-menu__text">8,00</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="section-column">
+              <div class="section-column__title">desserts</div>
+              <div class="section-column__body">
+                <ul class="food-menu__list">
+                  <li class="food-menu__item">
+                    <span class="food-menu__text">Cheesecake</span>
+                    <span class="food-menu__text">6,00</span>
+                  </li>
+                  <li class="food-menu__item">
+                    <span class="food-menu__text">Tiramisu</span>
+                    <span class="food-menu__text">11,00</span>
+                  </li>
+                  <li class="food-menu__item">
+                    <span class="food-menu__text">Chocolate Mousse</span>
+                    <span class="food-menu__text">8,00</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="discount">
+  <div class="container">
+    <div class="discount__inner">
+      <div class="discount__column">
+        <img class="discount__food" src="./img/discount/food.png" alt="food">
+      </div>
+      <div class="discount__content">
+        <div class="discount__header">
+          <h2 class="discount__title">Get a</h2>
+          <h3 class="discount__title discount__title_font-weight">25% discount</h3>
+          <h4 class="discount__title">on your next dinner</h4>
+          <a class="discount__button" href="#">Click Here</a>
+        </div>
+
+        <div class="discount__description">
+          <img class="discount__logo" src="./img/discount/logo.png" alt="logo">
+          <div class="discount__text">
+            <p>The Meat Experience</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="special-month">
+  <div class="container">
+    <div class="special-month__inner">
+      <div class="special-month__row">
+        <div class="special-month__column">
+          <div class="section-column">
+            <div class="section-column__title">special of the month</div>
+            <div class="section-column__body">Lorem ipsum dolor sit.</div>
+          </div>
+        </div>
+        <div class="special-month__column">
+          <div class="special-month__text">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo laborum animi nostrum aperiam voluptatem, quibusdam perspiciatis debitis hic voluptatum, ipsa ipsam eaque! Laboriosam deleniti consequatur vel est enim accusantium quas rerum? Numquam natus aperiam totam tempore sapiente reiciendis dicta magnam.</p>
+          </div>
+        </div>
+      </div>
+      <div class="special-month__images">
+        <div class="special-month__picture special-month__picture_first">
+          <img class="special-month__food" src="./img/special/food.png" alt="food">
+        </div>
+        <div class="special-month__picture special-month__picture_second">
+          <img class="special-month__food" src="./img/special/fork.png" alt="food">
+        </div>
+        <div class="special-month__picture special-month__picture_third">
+          <img class="special-month__food" src="./img/special/food-2.png" alt="food">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="method">
+  <div class="method__picture">
+    <img class="method__img" src="./img/method/food.png" alt="food">
+  </div>
+  <div class="container">
+    <div class="method__inner">
+      <div class="method__column">
+        <div class="method__food">
+          <img class="method__img" src="./img/method/food.png" alt="food">
+        </div>
+      </div>
+      <div class="method__content">
+        <div class="section-column">
+          <div class="section-column__title">Our Method</div>
+          <div class="section-column__body">
+            <div class="method__text">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet pariatur corrupti, voluptas cupiditate tempora nulla dignissimos dolorum molestiae magni quibusdam iure nihil labore culpa amet, hic a libero dolores ducimus?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="music">
+  <div class="container">
+    <div class="music__inner">
+      <div class="music__row">
+        <div class="music__column">
+          <div class="section-column">
+            <div class="section-column__title">live music</div>
+            <div class="section-column__body">
+              <h4 class="music__title">Jazz Night</h4>
+              <h5 class="music__subtitle">Every Friday</h5>
+            </div>
+          </div>
+        </div>
+        <div class="music__column">
+          <div class="music__text">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat atque, sed ea maxime unde fugiat quia, doloremque illum cumque quod inventore dicta. Quia nesciunt necessitatibus cupiditate, itaque ad repellendus incidunt.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="music__picture">
+    <img class="music__food" src="./img/music/food.png" alt="food">
+  </div>
+</section>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__header">
+        <a class="logo" href="#">
+          <img class="logo__img" src="./img/header/logo.png" alt="logo">
+        </a>
+        <h3 class="footer__title">-The Meat Experience-</h3>
+      </div>
+      <div class="footer__row">
+        <div class="section-column">
+          <div class="section-column__title">open</div>
+          <div class="section-column__body">
+            <div class="footer__item">Mon.Thurs.: 12AM - 11PM</div>
+            <div class="footer__item">Fri. - Sun.: 9AM -  12PM</div>
+          </div>
+        </div>
+        <ul class="footer-menu">
+          <li class="footer-menu__item">
+            <a class="footer-menu__link" href="#">Home</a>
+          </li>
+          <li class="footer-menu__item">
+            <a class="footer-menu__link" href="#">About</a>
+          </li>
+          <li class="footer-menu__item">
+            <a class="footer-menu__link" href="#">Contact</a>
+          </li>
+        </ul>
+        <ul class="footer-menu">
+          <li class="footer-menu__item">
+            <a class="footer-menu__link" href="#">Blog</a>
+          </li>
+          <li class="footer-menu__item">
+            <a class="footer-menu__link" href="#">Cookies</a>
+          </li>
+          <li class="footer-menu__item">
+            <a class="footer-menu__link" href="#">Site Map</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom__address">
+          Madison Street, 30 - City
+        </div>
+        <div class="footer-bottom__socials">
+          <a class="footer-bottom__social" href="#">
+            <svg class="footer-bottom__icon">
+              <use xlink:href="#instagram"></use>
+            </svg>
+          </a>
+          <a class="footer-bottom__social" href="#">
+            <svg class="footer-bottom__icon">
+              <use xlink:href="#facebook"></use>
+            </svg>
+          </a>
+          <a class="footer-bottom__social" href="#">
+            <svg class="footer-bottom__icon">
+              <use xlink:href="#twitter"></use>
+            </svg>
+          </a>
+          <a class="footer-bottom__social" href="#">
+            <svg class="footer-bottom__icon">
+              <use xlink:href="#youtube"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

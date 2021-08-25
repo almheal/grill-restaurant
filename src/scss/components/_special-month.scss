@@ -1,0 +1,135 @@
+.special-month{
+  background-image: url('../img/special/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__inner{
+    padding: 80px 0;
+  }
+
+  &__row{
+    display: flex;
+    margin-bottom: 82px;
+
+    @media(max-width: 769px){
+      flex-direction: column;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__column{
+    width: calc(100% / 2);
+    &:first-child{
+      margin-right: 70px;
+    }
+
+    @media(max-width: 769px){
+      width: 100%;
+
+      &:first-child{
+        margin: 0 0 40px 0;
+      }
+    }
+  }
+
+  .section-column{
+    &__title{
+      font-size: 41px;
+
+      @media(max-width: 420px){
+        font-size: 31px;
+      }
+    }
+  }
+
+  &__images{
+    position: relative;
+    display: flex;
+  }
+
+  &__picture{
+    &_first{
+      width: 781px;
+      height: 776px;
+
+      @media(max-width: 1349px){
+        width: 560px;
+        height: 556px;
+      }
+
+
+      @media(max-width: 993px){
+        width: 400px;
+        height: 397px;
+      }
+
+      @media(max-width: 769px){
+        width: 280px;
+        height: 278px;
+      }
+
+      @media(max-width: 420px){
+        width: 236px;
+        height: 234px;
+      }
+    }
+    &_second{
+      margin-top: 150px;
+      width: 385px;
+      height: 546px;
+
+      @media(max-width: 1349px){
+        width: 280px;
+        height: 397px;
+      }
+
+      @media(max-width: 993px){
+        width: 200px;
+        height: 284px;
+      }
+
+      @media(max-width: 769px){
+        width: 150px;
+        height: 212px;
+      }
+
+      @media(max-width: 420px){
+        width: 96px;
+        height: 137px;
+      }
+    }
+    &_third{
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 341px;
+      height: 334px;
+
+      @media(max-width: 1349px){
+        width: 240px;
+        height: 235px;
+      }
+
+      @media(max-width: 993px){
+        width: 180px;
+        height: 176px;
+      }
+
+      @media(max-width: 769px){
+        width: 135px;
+        height: 132px;
+      }
+
+      @media(max-width: 420px){
+        width: 100px;
+        height: 98px;
+      }
+    }
+  }
+
+  &__food{
+    width: 100%;
+    height: 100%;
+  }
+}
